@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Show";
+}
+
+<div id="show">
+    <nav>
+        <a class="navlink" href="/teacher/List">Back To teachers</a>
+        <a class="dellink" href="/teacher/Delete/@Model.teacherId">Delete</a>
+        <a class="navlink" href="/teacher/Update/@Model.teacherId">Update</a>
+    </nav>
+    <h2>@Model.teacherFname @Model.teacherLname</h2>
+    <p style="font-style:italic;"> @Model.hiredate</p>
+    <p style="font-style:italic;"> @Model.employeenumber</p>
+    <p style="font-style:italic;"> @Model.salary</p>
+
+</div>

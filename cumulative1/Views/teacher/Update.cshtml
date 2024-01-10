@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Update";
+}
+<div id="update">
+    <nav>
+        <a class="navlink" href="/teacher/Show/@Model.teacherId">Back</a>
+    </nav>
+    <h2>Update Teacher</h2>
+    <form method="POST" action="/teacher/Update/@Model.teacherId">
+        <div class="inputrow">
+            <label for="teacherFname">First Name:</label>
+            <input type="text" id="teacherFname" name="teacherFname" value="@Model.teacherFname" />
+
+        </div>
+        <div class="inputrow">
+            <label for="teacherLname">Last Name:</label>
+            <input type="text" id="teacherLname" name="teacherLname" value="@Model.teacherLname" />
+
+        </div>
+        <div class="inputrow">
+            <label for="hiredate">hiredate</label>
+            <input type="date" id="hiredate" name="hiredate" value="@Model.hiredate.ToString("yyyy-MM-dd")" />
+        </div>
+        <div class="inputrow">
+            <label for="employeenumber">employeenumber:</label>
+
+            <input type="text" id="employeenumber" name="employeenumber" value=" @Model.employeenumber" />
+            <div class="inputrow">
+                <label for="salary">Salary:</label>
+                <input type="text" id="salary" name="salary" value="@Model.salary" />
+            </div>
+
+
+        </div>
+        <div class="inputrow">
+            <input type="submit" value="Update Teacher"/>
+        </div>
+    </form>
+</div>
